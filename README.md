@@ -16,7 +16,7 @@ The data are contained in the files 'links.csv', 'movies.csv', 'ratings.csv' and
 
 ## Clustering
 
-#### This notebook is a movie recommendation model using "K-means clustering" and "DBScan clustering" models to recommend similar movies to the user. The two features extracted from the dataset are Average Movie Rating and tags of the movie given by various users.
+#### This project is a movie recommendation model using "K-means clustering" and "DBScan clustering" models to recommend similar movies to the user. The two features extracted from the dataset are Average Movie Rating and tags of the movie given by various users.
 
 
 Project Organization
