@@ -14,60 +14,20 @@ Users were selected at random for inclusion. All selected users had rated at lea
 
 The data are contained in the files 'links.csv', 'movies.csv', 'ratings.csv' and 'tags.csv'. More details about the contents and use of all these files follows.
 
+## Exploratory Data Analysis
+
+- Combining all datasets to create one single big dataframe
+- Word cloud showing most tags given by the users, to analyze user feedback on the movies
+- Dash drop down shows movies based on selected year and genre
+
 ## Clustering
 
-#### This project is a movie recommendation model using "K-means clustering" and "DBScan clustering" models to recommend similar movies to the user. The two features extracted from the dataset are Average Movie Rating and tags of the movie given by various users.
+This project is a movie recommendation model using **"K-means clustering"** and **"DBScan clustering"** models to recommend similar movies to the user. The two features extracted from the dataset are Average Movie Rating and tags of the movie given by various users.
 
-
-Project Organization
-------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
-
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+- Label Enocding on tags column
+- Elbow Method to determine number of clusters
+- Selecting the number of clusters with Silhouette analysis on KMeans clustering
+- K-Means Clustering model
+- checking the results of K-Means Clustering model
+- DBSCAN Clustering model
+- Visualizing both DBScan and K-means models
